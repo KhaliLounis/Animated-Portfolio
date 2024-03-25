@@ -9,9 +9,15 @@ const WhatWeDo = ({ type }) => {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "175%"]);
-  console.log(x)
+  console.log(x);
   return (
-    <div className="relative h-screen w-screen snap-start bg-[#0f0f2a] -z-50">
+    <div
+      className={`relative h-screen w-screen snap-start ${
+        type === "works"
+          ? "bg-gradient-to-b from-[#171737] to-[#3e3e55]"
+          : "bg-[#0f0f2a]"
+      } -z-50`}
+    >
       <div className=" bg-[url('/mountains.png')] bg-cover bg-no-repeat bg-bottom z-40 size-full "></div>
       <motion.div
         className="absolute top-0 bg-[url('/stars.png')] bg-cover bg-no-repeat bg-bottom -z-10 size-full "

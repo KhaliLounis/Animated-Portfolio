@@ -6,7 +6,7 @@ const AboutCard = ({ title, desc }) => {
     <div className="flex  border-2 border-solid p-4 text-[#d3d3d3] rounded-md border-white flex-col gap-y-2 hover:bg-white hover:text-black transition duration-300 ease-in-out ">
       <h1 className="font-main text-xl font-semibold  ">{title}</h1>
       <p className=" font-main font-light text-lg  ">{desc}</p>
-      <button className=" w-1/2 self-center bg-[#ffa500] rounded-md text-black font-main p-3 text-md">
+      <button className=" w-1/2 self-center bg-[#ffa500] rounded-md text-black font-main p-3 text-md hover:brightness-[85%]">
         Go
       </button>
     </div>
