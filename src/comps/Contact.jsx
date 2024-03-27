@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
-    y: 500,
+    y: 50,
     opacity: 0,
   },
   animate: {
@@ -84,7 +84,7 @@ const Contact = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
-          className="flex flex-col gap-[20px] z-20 w-screen max-md:px-10 max-md:mb-5 "
+          className="flex flex-col gap-[20px] z-20 max-md:w-screen max-md:px-10 max-md:mb-5 "
         >
           <input
             type="text"
