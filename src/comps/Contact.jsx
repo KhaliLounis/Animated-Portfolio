@@ -29,7 +29,7 @@ const Contact = () => {
       id="contact"
       >
       <motion.div
-        className="flex flex-col flex-1 gap-[40px] max-md:gap-y-7 max-md:mt-10"
+        className="flex flex-col flex-1 gap-[40px] max-md:gap-y-5 max-md:mt-8"
         variants={variants}
       >
         <motion.h1
@@ -53,12 +53,12 @@ const Contact = () => {
       </motion.div>
       <div className="relative flex-1">
         <motion.div
-          className="absolute m-auto stroke-orange-400 "
+          className="absolute m-auto stroke-orange-400  "
           initial={{ opacity: 1}}
           whileInView={{ opacity: 0 , visibility: "hidden"}}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
