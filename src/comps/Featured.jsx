@@ -14,11 +14,9 @@ const Work = ({ img, title }) => {
   const y = useTransform(scrollYProgress, [0, 1], ["-15rem", "15rem"]);
 
   return (
-    <div
-      className="flex gap-x-4 items-center h-screen w-screen snap-start bg-[#0f0f2a]  "
-      >
-      <div className="  ml-10 w-10/12">
-        <img src={img} alt="" className="w-11/12   " />
+    <div className="flex gap-x-y items-center h-screen w-screen snap-start bg-[#0f0f2a] px-24  ">
+      <div className="  ml-10 w-10/12 ">
+        <img src={img} alt="" className="w-11/12    " />
       </div>
       <motion.div
         className="flex flex-col items-start gap-y-4  "
@@ -67,7 +65,11 @@ const Featured = () => {
     },
   ];
   return (
-    <div className=" bg-[#0f0f2a] flex flex-col items-center  " ref={ref}>
+    <div
+      className=" bg-[#0f0f2a] flex flex-col items-center  "
+      ref={ref}
+      id="portfolio"
+    >
       <div className="sticky top-5">
         <h1 className="max-lg:text-5xl text-7xl font-main font-extrabold text-[#ffa500] text-center">
           Featured Works

@@ -44,8 +44,8 @@ const Hero = () => {
             initial="initial"
             animate="animate"
           >
-            <a href="#featured">
-              <button className={buttonStyle}>See my latest works</button>
+            <a href="#featured" className={buttonStyle}>
+              See my latest works
             </a>
             <a href="#contact">
               <button className={buttonStyle}>Contact Me</button>

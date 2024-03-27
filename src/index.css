@@ -7,7 +7,7 @@
     color-scheme: dark;
   }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
     scroll-snap-type: y mandatory;
 }
 

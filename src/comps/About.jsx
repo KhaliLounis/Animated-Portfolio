@@ -14,21 +14,18 @@ const AboutCard = ({ title, desc }) => {
 };
 
 const About = () => {
-  const slideIn = (delay) => {
-    return {
-      initial: {
-        opacity: 0,
-        x: -500,
+  const slideIn = {
+    initial: {
+      opacity: 0,
+      x: -500,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
       },
-      animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
-          delay: delay,
-        },
-      },
-    };
+    },
   };
   const cards = [
     {
@@ -54,7 +51,7 @@ const About = () => {
       <motion.div
         whileInView="animate"
         viewport={{ once: false, amount: 0.25 }}
-        variants={slideIn()}
+        variants={slideIn}
         initial="initial"
         className="flex justify-end"
       >
@@ -66,7 +63,7 @@ const About = () => {
       <motion.div
         whileInView="animate"
         viewport={{ once: false, amount: 0.25 }}
-        variants={slideIn()}
+        variants={slideIn}
         initial="initial"
         className="flex flex-col gap-y-4"
       >
@@ -81,7 +78,7 @@ const About = () => {
       <motion.div
         whileInView="animate"
         viewport={{ once: false, amount: 0.25 }}
-        variants={slideIn()}
+        variants={slideIn}
         initial="initial"
         className="flex  gap-x-8 my-8 px-8"
       >
