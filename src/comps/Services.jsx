@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutCard = ({ title, desc }) => {
   return (
-    <div className="flex  border-2 border-solid p-4 text-[#d3d3d3] rounded-md border-white flex-col gap-y-2 hover:bg-white hover:text-black transition duration-300 ease-in-out ">
+    <div className="flex border-2 border-solid p-4 text-[#d3d3d3] rounded-md border-white flex-col gap-y-2 hover:bg-white hover:text-black transition duration-300 ease-in-out max-md:px-10  max-md:min-w-full ">
       <h1 className="font-main text-xl font-semibold  ">{title}</h1>
       <p className=" font-main font-light text-lg  ">{desc}</p>
       <button className=" w-1/2 self-center bg-[#ffa500] rounded-md text-black font-main p-3 text-md hover:brightness-[85%]">
@@ -17,7 +17,7 @@ const About = () => {
   const slideIn = {
     initial: {
       opacity: 0,
-      x: -500,
+      x: -100,
     },
     animate: {
       x: 0,
@@ -47,7 +47,7 @@ const About = () => {
   ];
   const spanStyle = "hover:text-[#ffa500] font-bold";
   return (
-    <div className="flex flex-col bg-gradient-to-b from-[#0d0d21] to-[#111130] size-screen snap-start ">
+    <div className="flex flex-col bg-gradient-to-b from-[#0d0d21] to-[#111130] size-screen snap-start " id="services">
       <motion.div
         whileInView="animate"
         viewport={{ once: false, amount: 0.25 }}
@@ -56,7 +56,7 @@ const About = () => {
         className="flex justify-end"
       >
         <p className="font-main text-lg text-[#808080] text-center mt-4">
-          I focus on helping your brand grow<br></br> and move forward
+          I focus on helping your brand grow<br className="max-md:hidden"></br> and move forward
         </p>
         <hr className="w-1/3 self-center stroke-slate-500 stroke-1 " />
       </motion.div>

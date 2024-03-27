@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const buttonStyle =
-    "bg-transparent rounded-xl p-4 border-slate-300 border-solid text-white hover:bg-white hover:text-black transition duration-300 ease-in-out border-[1px]";
+    "bg-transparent rounded-xl p-4 border-slate-300 border-solid text-white hover:bg-white hover:text-black transition duration-300 ease-in-out border-[1px] max-md:text-center";
   const slideIn = (delay) => {
     return {
       initial: {
@@ -70,7 +70,7 @@ const Hero = () => {
           repeatType: "loop",
           ease: "linear",
         }}
-        className=" bottom-0 max-md:bottom-10  absolute text-[7rem] max-md:text-8xl text-slate-600 opacity-20 font-bold font-main text-nowrap"
+        className=" bottom-0 max-md:bottom-10 absolute text-[7rem] max-md:text-8xl text-slate-600 opacity-20 font-bold font-main text-nowrap"
       >
         Writer Content Creator Influencer
       </motion.span>

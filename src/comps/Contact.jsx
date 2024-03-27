@@ -23,12 +23,13 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="h-screen flex items-center gap-50 bg-[#0f0f2a] snap-start w-screen px-20 max-md:flex-col"
+      className="h-screen flex items-center bg-[#0f0f2a] snap-start w-screen px-20 max-md:flex-col"
       initial="initial"
       whileInView="animate"
+      id="contact"
       >
       <motion.div
-        className="flex flex-col flex-1 gap-[40px]"
+        className="flex flex-col flex-1 gap-[40px] max-md:gap-y-7 max-md:mt-10"
         variants={variants}
       >
         <motion.h1

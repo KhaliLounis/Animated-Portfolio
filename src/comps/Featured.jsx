@@ -70,7 +70,7 @@ const Featured = () => {
       ref={ref}
       id="portfolio"
     >
-      <div className="sticky top-5 ">
+      <div className="sticky top-5 max-md:top-[calc(100vh - 100px)] ">
         <h1 className="max-lg:text-5xl text-7xl font-main font-extrabold text-[#ffa500] text-center max-md:text-4xl">
           Featured Works
         </h1>

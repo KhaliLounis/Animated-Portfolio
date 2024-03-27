@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./comps/Navbar";
 import Hero from "./comps/Hero";
 import Parallax from "./comps/Parallax";
-import About from "./comps/About";
+import About from "./comps/Services";
 import Featured from "./comps/Featured";
 import Contact from "./comps/Contact";
 const App = () => {
