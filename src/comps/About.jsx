@@ -67,7 +67,7 @@ const About = () => {
         initial="initial"
         className="flex flex-col gap-y-4"
       >
-        <h1 className=" text-center font-light text-7xl font-main text-white">
+        <h1 className=" text-center font-light text-7xl font-main text-white max-md:text-5xl px-2">
           <span className={spanStyle}>Unique </span>Ideas<br></br>{" "}
           <span className={spanStyle}>For Your </span> Buisness.
         </h1>
@@ -80,7 +80,7 @@ const About = () => {
         viewport={{ once: false, amount: 0.25 }}
         variants={slideIn}
         initial="initial"
-        className="flex  gap-x-8 my-8 px-8"
+        className="flex  gap-x-8 my-8 px-8 overflow-x-scroll max-md:gap-x-12"
       >
         {cards.map((card, index) => (
           <AboutCard key={index} title={card.title} desc={card.desc} />

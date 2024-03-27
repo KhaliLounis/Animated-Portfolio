@@ -18,3 +18,9 @@ body{
     overflow-x: hidden;
     /* overflow-y: hidden; */
 }
+@media screen and (max-width: 750px){
+    .project{
+        transform: none !important;
+    }
+    
+}

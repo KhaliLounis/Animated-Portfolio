@@ -47,7 +47,7 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
     <motion.div
       variants={variants}
       animate={isOpen ? "open" : "closed"}
-      className="  flex flex-col gap-y-8 text-4xl font-main font-medium items-center justify-center h-screen w-1/4 bg-white text-black absolute top-0 left-0"
+      className="  flex flex-col gap-y-8 text-4xl font-main font-medium items-center justify-center h-screen w-1/4 bg-white text-black absolute top-0 left-0 max-md:w-1/2 max-md:text-2xl"
     >
       {["Homepage", "Services", "Portfolio", "Contact"].map((text, index) => (
         <AnimatePresence>
@@ -85,7 +85,7 @@ const Navbar = () => {
           {!isOpen ? (
             <FiMenu
               size={25}
-              className="self-center relative z-20 cursor-pointer"
+              className="relative z-20 cursor-pointer"
               color="black"
               onClick={() => setIsOpen(!isOpen)}
             />
@@ -93,7 +93,7 @@ const Navbar = () => {
             <>
               <IoClose
                 size={25}
-                className="self-center relative z-20 cursor-pointer"
+                className="relative z-20 cursor-pointer"
                 color="black"
                 onClick={() => setIsOpen(!isOpen)}
               />
@@ -101,7 +101,7 @@ const Navbar = () => {
             </>
           )}
         </div>
-        <div className="flex gap-x-4 self-end">
+        <div className="flex gap-x-4 ">
           {socials.map((social, index) => (
             <a href="#">
               <img
