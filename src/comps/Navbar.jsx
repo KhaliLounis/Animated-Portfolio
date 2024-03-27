@@ -45,7 +45,7 @@ const Sidebar = ({ setIsOpen, isOpen }) => {
 
   return (
     <motion.div
-    variants={variants}
+      variants={variants}
       animate={isOpen ? "open" : "closed"}
       className="  flex flex-col gap-y-8 text-4xl font-main font-medium items-center justify-center h-screen w-1/4 bg-white text-black absolute top-0 left-0"
     >
