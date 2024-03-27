@@ -9,7 +9,6 @@ const WhatWeDo = ({ type }) => {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "175%"]);
-  console.log(x);
   return (
     <div
       className={`relative h-screen w-screen snap-start ${

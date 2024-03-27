@@ -9,13 +9,14 @@
 html{
     scroll-behavior: smooth ;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden !important;
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     /* overflow-y: hidden; */
 }
 @media screen and (max-width: 750px){

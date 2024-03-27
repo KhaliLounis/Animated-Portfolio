@@ -33,7 +33,7 @@ const Contact = () => {
       >
         <motion.h1
           variants={variants}
-          className="font-main font-extrabold text-7xl max-md:text-5xl"
+          className="font-main font-extrabold text-7xl max-md:text-4xl max-md:text-nowrap"
         >
           Let’s work together
         </motion.h1>

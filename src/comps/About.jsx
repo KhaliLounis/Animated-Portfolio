@@ -80,7 +80,7 @@ const About = () => {
         viewport={{ once: false, amount: 0.25 }}
         variants={slideIn}
         initial="initial"
-        className="flex  gap-x-8 my-8 px-8 overflow-x-scroll max-md:gap-x-12"
+        className="flex  gap-x-8 my-8 px-8 max-md:overflow-x-scroll max-md:gap-x-12"
       >
         {cards.map((card, index) => (
           <AboutCard key={index} title={card.title} desc={card.desc} />
